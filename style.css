@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #0b1220);
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-green {
+  background: #22c55e;
+  color: black;
+}
+
+.btn-green:hover {
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background: #334155;
+  color: white;
+  margin-left: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PROOF */
+.review {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+}
+
+/* CTA FIXED */
+.fixed-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-btn {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: black;
+}
+
+.telegram {
+  background: #229ED9;
+  color: white;
+}
+
+/* CONTACTS */
+
+.contacts {
+  background: radial-gradient(circle at top, #1e293b, #0b1220);
+}
+
+.contacts__social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.media-logo:hover {
+  scale: 1.2;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* FORM */
+.form {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #22c55e;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  background: radial-gradient(circle at top, #1e293b, #0b1220);
+}
