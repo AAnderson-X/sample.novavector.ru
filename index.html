@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="js/analytics.js"></script>
+  <title>Заявки для мастера каждый день</title>
+  <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVYGBGS452"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PVYGBGS452');
+  </script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Сантехник в Ставрополе — выезд за 30 минут</h1>
+  <p>Для мастеров, которые хотят больше клиентов без рекламы</p>
+
+  <a href="#form" class="btn btn-green">Получить сайт</a>
+  <a href="#cases" class="btn btn-dark">Посмотреть примеры</a>
+</div>
+
+<!-- BENEFITS -->
+<section>
+  <h2>Почему сайт работает</h2>
+
+  <div class="container grid">
+
+    <div class="card">
+      <h3>⚡ Быстрый запуск</h3>
+      <p>Готов за 3–5 дней</p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Заявки</h3>
+      <p>Сайт сделан под клиентов, а не дизайн</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 Мобильный трафик</h3>
+      <p>90% клиентов заходят с телефона</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <h2>Примеры работ</h2>
+
+  <div class="container grid">
+
+    <div class="card review picture-condition">
+      <h3>🔧 Ремонт кондиционеров</h3>
+      <p>+12 заявок за первую<br>неделю</p>
+    </div>
+
+    <div class="card review picture-electricity">
+      <h3>⚡ Электрик</h3>
+      <p>+8 заявок<br>без рекламы</p>
+    </div>
+
+    <div class="card review picture-plumbing">
+      <h3>🚿 Сантехник</h3>
+      <p>стабильно 2–4 заявки<br>в день</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts">
+  <div class="container">
+  <h2>Как с нами связаться</h2>
+<p class="contacts__telephone-text">Вы можете позвонить нам по номеру:</p>
+    <a href="tel:+7(962)-494-47-22" class="contacts__phone">+7(962)-494-47-22</a>
+    <p class="contacts__text">Написать нам в социальных сетях или оставить заявку ниже.</p>
+    <div class="contacts__social-media">
+      <a href="https://wa.me/79999999999" class="contacts__link"> <img src="./img/WhatsApp.png" alt="" class="media-logo"> </a>
+      <a href="https://t.me/username" class="contacts__link"> <img src="./img/Telegram.png" alt="" class="media-logo"> </a>
+      <a href="#" class="contacts__link"> <img src="./img/Instagram.png" alt="" class="media-logo"> </a>
+      <a href="#" class="contacts__link"> <img src="./img/VK.png" alt="" class="media-logo"> </a>
+      <a href="#" class="contacts__link"> <img src="./img/MAX-32x32.png" alt="" class="media-logo"> </a>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form">
+  <h2>Оставьте заявку</h2>
+
+  <div class="form">
+    <form onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Имя" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <textarea id="message" placeholder="Коротко опишите услугу"></textarea>
+      <button type="submit">Отправить заявку в WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- FIXED CTA -->
+<div class="fixed-cta">
+  <a href="https://wa.me/79624944722" class="cta-btn whatsapp">WhatsApp</a>
+  <a href="https://t.me/username" class="cta-btn telegram">Telegram</a>
+</div>
+
+<footer>
+  Nova Vector © 2026 | Сайты для бизнеса
+</footer>
+
+</body>
+</html>
