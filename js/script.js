@@ -59,7 +59,17 @@ document.getElementById('tg-form').addEventListener('submit', function(e) {
   })
     .then(res => {
       if(res.ok) {
-        alert('Заявка отправлена! Мастер скоро с вами свяжется.');
+        // 1. Находим форму и блок успеха
+        const form = document.getElementById('tg-form');
+        const successBox = document.getElementById('success-message');
+
+        // 2. Скрываем форму (она больше не нужна)
+        form.style.display = 'none';
+
+        // 3. Показываем сообщение об успехе
+        successBox.style.display = 'block';
+
+        // 4. Очищаем форму на всякий случай
         this.reset();
       } else {
         alert('Ошибка при отправке. Попробуйте снова.');
