@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const TOKEN = "8772496210:AAFCDVGbm1IOw6lFkzc8bwg6Wkjh4qwW-e8";
 const CHAT_ID = "779268768";
-const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const url = `https://script.google.com/macros/s/AKfycbxqJgbVLAOBbwhY_X1_QcE3-Jio__rdfGA_7l3cS1Dn6vX8SD6KHjsMaZisf0jSzItW/exec`;
 
 document.getElementById('tg-form').addEventListener('submit', function(e) {
   e.preventDefault();
