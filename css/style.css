@@ -172,7 +172,7 @@ h2 {
 }
 
 /* FORM */
-.form {
+.form__form-container {
   background: #1e293b;
   padding: 30px;
   border-radius: 14px;
