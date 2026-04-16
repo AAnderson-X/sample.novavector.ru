@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>Заявки для мастера каждый день</title>
+
+  <title>Услуги электрика</title>
+
+  <script src="https://unpkg.com/imask"></script>
+
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aanderson-x.github.io/my-site/">
+  <meta property="og:title" content="Иван Иванов — Качественные услуги электрика">
+  <meta property="og:description" content="Монтаж под ключ, работа по договору. Оставьте заявку и получите расчет стоимости!">
+  <meta property="og:image" content="https://aanderson-x.github.io/my-site/v-preview.jpg">
+  <meta property="og:image:secure_url" content="https://aanderson-x.github.io/my-site/v-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Иван Иванов — Качественные услуги электрика">
+  <meta property="twitter:description" content="Монтаж под ключ, работа по договору. Оставьте заявку и получите расчет стоимости!">
+  <meta property="twitter:image" content="https://aanderson-x.github.io/my-site/v-preview.jpg">
+
+
+  <!-- FAVICON -->
   <link rel="icon" sizes="32x32" href="favicon-32x32.png">
 
   <!-- Google tag (gtag.js) -->
@@ -43,7 +64,7 @@
 
     <div class="card">
       <h3 class="benefits__header">📈 Заявки</h3>
-      <p class="benefits__card-text">Сайт сделан под клиентов, а не дизайн</p>
+      <p class="benefits__card-text">Сайт сделан под клиентов, а не под дизайн</p>
     </div>
 
     <div class="card">
@@ -85,6 +106,7 @@
 <p class="contacts__telephone-text">Вы можете позвонить по номеру:</p>
       <a href="tel:+7(962)-494-47-22" class="contacts__phone">
     <img
+      class="contacts__phone-icon"
       src="./img/phone.png"
       alt=""
     >+7(962)-494-47-22</a>
@@ -164,25 +186,37 @@
 <section id="form">
   <h2>Оставьте заявку</h2>
 
-  <div class="form">
-    <form onsubmit="sendToWhatsApp(event)">
-      <input type="text" id="name" placeholder="Имя" required>
-      <input type="tel" id="phone" placeholder="Телефон" required>
+  <div class="form__form-container">
+    <form id="tg-form">
+      <input type="text" id="name" placeholder="Ваше имя" required>
+      <input type="tel" id="phone" placeholder="Ваш телефон" required>
       <textarea id="message" placeholder="Коротко опишите услугу"></textarea>
-      <button type="submit">Отправить заявку в WhatsApp</button>
+      <button type="submit" class="form__submit-btn">Отправить заявку</button>
     </form>
+    <div id="success-message" style="display: none; color: #ffffff; font-weight: bold; margin-top: 15px; border: 1px solid green; padding: 10px; border-radius: 5px; text-align: center;">
+      ✅ Спасибо! Заявка отправлена. Мастер свяжется с вами в ближайшее время.
+    </div>
+
+<!--    <form onsubmit="sendToWhatsApp(event)">-->
+<!--      <input type="text" id="name" placeholder="Имя" required>-->
+<!--      <input type="tel" id="phone" placeholder="Телефон" required>-->
+<!--      <textarea id="message" placeholder="Коротко опишите услугу"></textarea>-->
+<!--      <button type="submit">Отправить заявку в WhatsApp</button>-->
+<!--    </form>-->
   </div>
 </section>
 
 <!-- FIXED CTA -->
 <div class="fixed-cta">
-  <a href="https://wa.me/79624944722" class="cta-btn whatsapp">WhatsApp</a>
-  <a href="https://t.me/username" class="cta-btn telegram">Telegram</a>
+  <a href="#" class="cta-btn whatsapp" onclick="openWA()">WhatsApp</a>
+  <a href="#" class="cta-btn telegram" onclick="openTG()">Telegram</a>
 </div>
 
 <footer>
   Nova Vector © 2026 | Сайты для бизнеса
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
