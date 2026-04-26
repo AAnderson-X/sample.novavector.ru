@@ -62,8 +62,8 @@
 // NEW TG
 
 document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('tg-form');
-  const phoneInput = document.getElementById('phone');
+  const form = document.getElementById('tg-form'),
+        phoneInput = document.getElementById('phone');
 
   //  ССЫЛКЫ ТУТ:
   const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXZOhZLUBYv1RHVFlrFNdMeGYML8GEZosqildHVkEEfCkxqAcQxSo8aDEDThr_514cyg/exec";
