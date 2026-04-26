@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const phoneInput = document.getElementById('phone');
 
   //  ССЫЛКЫ ТУТ:
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKPs0wohXcj8fMbyolOVqNaKcEN0xmjGAxQzM4LetDxA-Sgb2TpBbJUp-w0oECc1wUmw/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwMd6lV2d_rc22_igC-mMcD1Az9v5LiFSGRUPgiKplcJvGaa8eRwO6_Kw7ZShklqsbHPQ/exec";
 
   // 1. НАСТРОЙКА МАСКИ ТЕЛЕФОНА
   if (phoneInput) {
